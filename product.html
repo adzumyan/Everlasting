@@ -1,0 +1,138 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="Content-type" content="text/html; charset=utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<title>We are Everlasting </title>
+	<link rel="stylesheet" href="css/swiper.min.css" type="text/css">
+	<link rel="stylesheet" href="css/styles.css" type="text/css">
+	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Oswald:400,300" type="text/css">
+	<!--[if lt IE 9]>
+	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+</head>
+<body>
+	<div class="wrapper"> <!--Wrapper используется для объединения блоков и их выравнивания по центру страницы.!-->
+		<header>
+			<a href="/"><img src="images/logo.png" alt="Everlasting"></a> <!--Добавляем лого!-->
+			<form name="search" action="#" method="get"> <!--Вставляем форму поиска в тег header!-->
+				<input type="text" name="q" placeholder="Search"><button type="submit">GO</button>
+			</form>
+		</header>
+		<nav>
+			<ul class="top-menu"> <!--Добавляем меню в шапку страницы!-->
+				<li class="active">Главная</li>
+				<li><a href="catalog">Каталог</a></li>
+				<li><a href="/about/">О нас</a></li>
+				<li><a href="/customers/">Производители</a></li>
+				<li><a href="/projects/">Типы проектов</a></li>
+				<li><a href="/contact/">Связаться с нами</a></li>
+			</ul>
+		</nav>
+		<div class="heading">
+			<h1>Синамон</h1>
+		</div>
+		<aside>
+			<nav>
+				<ul class="aside-menu">
+					<li class="active">Кровати</li>
+					<li><a href="/shkaf/">Шкафы</a></li>
+					<li><a href="/Stol/">Столы</a></li>
+					<li><a href="/Stul/">Стулья</a></li>
+					<li><a href="/Divani/">Диваны</a></li>
+					<li><a href="/Tumb/">Тумбы</a></li>
+				</ul>
+			</nav>
+			<h2>Специальное предложение</h2>
+			<p>
+				<img src="images/bg1.png" width="230" height="180" alt="Special">
+			</p>
+			<div>
+				<p>Вот так мы выглядим!</p>
+				<img src="images/FIND_US.png" width="230" height="180" alt="Special">
+			</div>
+		</aside>
+		<section>
+		
+			<div class="content">
+				<div class="product-images">
+					<!-- Swiper -->
+					<div class="swiper-container">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide">
+								<img src="images/1_5pl.jpg" alt="special">
+							</div>
+							<div class="swiper-slide">
+								<img src="images/olivia_krovat_novai.jpg" alt="special">
+							</div>
+						</div>
+						<!-- Add Arrows -->
+						<div class="swiper-button-next"></div>
+						<div class="swiper-button-prev"></div>
+					</div>
+				</div>
+				<div class="product-desc">
+					<h3>Характеристики</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor, illum!</p>
+				</div>
+				<h3>Описание</h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam aspernatur eaque ipsum maxime nesciunt numquam optio quaerat, quia quidem sint.</p>
+			</div>
+		</section>
+			
+
+	
+	
+	<footer>
+		<div class="footer">
+			<div class="sitemap">
+				<h3>Навигация</h3>
+				<div>
+					<a href="/home/">Главная</a>
+					<a href="/about/">О нас</a>
+					<a href="/services/">Каталог</a>
+				</div>
+				<div>
+					<a href="/projects/">Проекты</a>
+					<a href="/customers/">Производители</a>
+					<a href="/contact/">Связаться</a>
+				</div>
+			</div>
+			<div class="social">
+				<h3>Социальные сети</h3>
+				<a href="http://twitter.com/" class="social-icon twitter"></a>
+				<a href="http://facebook.com/" class="social-icon facebook"></a>
+				<a href="http://plus.google.com/" class="social-icon google-plus"></a>
+				<a href="http://vimeo.com/" class="social-icon-small vimeo"></a>
+				<a href="http://youtube.com/" class="social-icon-small youtube"></a>
+				<a href="http://flickr.com/" class="social-icon-small flickr"></a>
+				<a href="http://instagram.com/" class="social-icon-small instagram"></a>
+				<a href="/rss/" class="social-icon-small rss"></a>
+			</div>
+			<div class="footer-logo">
+				<a href="/"><img src="images/footer-logo.png" alt="Whitesquare logo"></a>
+				<p>Copyright &copy; 2012 Everlasting.</p>
+			</div>
+		</div>
+	</footer>
+</div>
+	<script src="js/jquery-3.3.1.min.js"></script>
+	<script src="js/swiper.min.js"></script>
+	<script>
+		$(document).ready(function () {
+		    //Инициализируем слайдер для блока с классом swiper-container
+            var swiper = new Swiper('.swiper-container', {
+                navigation: { //Элементы управления
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
+                autoplay: {
+                    delay: 2500,
+                    disableOnInteraction: false,
+                },
+            });
+		});
+	</script>
+</body>
+</html>
